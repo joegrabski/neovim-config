@@ -1,6 +1,5 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.python",
     "lazyvim.plugins.extras.lang.tailwind",
     "lazyvim.plugins.extras.lang.yaml",
@@ -12,3 +11,4 @@
   },
   "version": 2
 }
+
