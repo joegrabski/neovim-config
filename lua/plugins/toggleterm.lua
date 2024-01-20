@@ -1,7 +1,7 @@
 return {
   "akinsho/toggleterm.nvim",
   version = "*",
-  config = function()
+  init = function()
     require("toggleterm").setup({
       open_mapping = [[<c-\>]],
       direction = "vertical",

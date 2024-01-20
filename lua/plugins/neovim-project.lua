@@ -2,10 +2,11 @@ return {
   "coffebar/neovim-project",
   opts = {
     projects = { -- define project roots
-      "~/projects/dissertation/",
+      "~/projects/*",
       "~/projects/transloadit/*",
       "~/.config/nvim/",
     },
+    last_session_on_startup = false,
   },
   init = function()
     -- enable saving the state of plugins in the session
