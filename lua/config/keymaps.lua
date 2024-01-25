@@ -11,9 +11,12 @@ map("n", "<C-1>", "<Cmd>Telescope neovim-project discover<cr>", { desc = "Switch
 -- use U for redo :))
 map("n", "U", "<C-r>", {})
 -- auto add closing {, [, (, ', ", <
-map("i", "{<cr>", "{<cr>}<ESC>kA<CR>", {})
-closing_pairs = { "}", ")", "]", '"', "'", ">" }
-opening_pairs = { "{", "(", "[", '"', "'", "<" }
-for key, chr in pairs(opening_pairs) do
-  map("i", chr, chr .. closing_pairs[key] .. "<esc>i", {})
-end
+-- map("i", "{<cr>", "{<cr>}<ESC>kA<CR>", {})
+-- closing_pairs = { "}", ")", "]", '"', "'", ">" }
+-- opening_pairs = { "{", "(", "[", '"', "'", "<" }
+-- for key, chr in pairs(opening_pairs) do
+--   map("i", chr, chr .. closing_pairs[key] .. "<esc>i", {})
+-- end
+
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
