@@ -17,6 +17,11 @@ map("n", "U", "<C-r>", {})
 -- for key, chr in pairs(opening_pairs) do
 --   map("i", chr, chr .. closing_pairs[key] .. "<esc>i", {})
 -- end
-
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-u>", "<C-u>zz")
+
+-- auto move and indent highlighted things
+map("v", "J", ":m '>+1<CR>gv=gv")
+map("v", "K", ":m '<-2<CR>gv=gv")
+
+map("n", "<C-S>", ":w<CR>", { noremap = true, silent = true })

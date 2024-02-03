@@ -67,7 +67,7 @@ return {
           desc = "Signature Help",
         },
         {
-          "<leader>rn",
+          "<leader>cd",
           function()
             vim.lsp.buf.rename()
           end,

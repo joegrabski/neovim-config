@@ -13,6 +13,9 @@ opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
 
+opt.conceallevel = 0
+
 -- search
 opt.ignorecase = true
 opt.smartcase = true
+
