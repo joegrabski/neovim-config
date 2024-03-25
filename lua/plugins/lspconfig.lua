@@ -1,7 +1,7 @@
 return {
   {
     "neovim/nvim-lspconfig",
-    dependencies = {},
+    dependencies = { { "hrsh7th/cmp-cmdline" } },
     ---@class PluginLspOpts
     opts = {
       ---@type lspconfig.options

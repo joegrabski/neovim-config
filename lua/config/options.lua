@@ -19,3 +19,4 @@ opt.conceallevel = 0
 opt.ignorecase = true
 opt.smartcase = true
 
+opt.termguicolors = true

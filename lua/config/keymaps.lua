@@ -1,13 +1,7 @@
 local map = vim.keymap.set
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-map("n", "<C-1>", "<Cmd>Telescope neovim-project discover<cr>", { desc = "Switch project", remap = true })
--- Shift + Up/Down to move line up/down
--- Using H/L to go to the begining and the end of line
--- Note: H will map to _ (the first non-whitespace character of a line)
--- It would be helpful if it is a indent line in some languages like Python, Ruby, YAML, ...
--- map("n", "H", "_")
--- map("n", "L", "$")
+map("n", "<C-p>", "<Cmd>Telescope neovim-project discover<cr>", { desc = "Switch project", remap = true })
 -- use U for redo :))
 map("n", "U", "<C-r>", {})
 -- auto add closing {, [, (, ', ", <
@@ -25,3 +19,16 @@ map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '<-2<CR>gv=gv")
 
 map("n", "<C-S>", ":w<CR>", { noremap = true, silent = true })
+
+map("n", "<leader>S", '<cmd>lua require("spectre").toggle()<CR>', {
+  desc = "Toggle Spectre",
+})
+map("n", "<leader>sw", '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', {
+  desc = "Search current word",
+})
+map("v", "<leader>sw", '<esc><cmd>lua require("spectre").open_visual()<CR>', {
+  desc = "Search current word",
+})
+map("n", "<leader>sp", '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', {
+  desc = "Search on current file",
+})

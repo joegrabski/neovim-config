@@ -14,7 +14,7 @@ return {
         lualine_b = { "filename", "branch" },
         lualine_c = {},
         lualine_x = {},
-        lualine_y = { "fileformat", "filetype", "progress" },
+        lualine_y = { "filetype", "progress" },
         lualine_z = {
           { "location", separator = { right = "" }, left_padding = 2 },
         },

@@ -44,4 +44,5 @@ require("lazy").setup({
   },
 })
 vim.cmd("colorscheme catppuccin")
+-- require("mini.animate").setup()
 vim.opt.swapfile = false
