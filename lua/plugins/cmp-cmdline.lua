@@ -5,7 +5,7 @@ return {
     ---@diagnostic disable-next-line: missing-fields
     cmp.setup.cmdline(":", {
       mapping = cmp.mapping.preset.cmdline({
-        ["<C-y>"] = {
+        ["<C-]>"] = {
           c = function(fallback)
             if cmp.visible() then
               cmp.select_next_item()

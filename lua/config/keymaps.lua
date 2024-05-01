@@ -23,6 +23,7 @@ map("n", "<C-S>", ":w<CR>", { noremap = true, silent = true })
 map("n", "<leader>S", '<cmd>lua require("spectre").toggle()<CR>', {
   desc = "Toggle Spectre",
 })
+
 map("n", "<leader>sw", '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', {
   desc = "Search current word",
 })

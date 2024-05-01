@@ -129,7 +129,15 @@ return {
           end,
           desc = "Go to Next",
         },
+        {
+          "c'",
+          function()
+            vim.lsp.stop_client(vim.lsp.get_clients())
+          end,
+          desc = "Restart LSP",
+        },
       },
+      inlay_hints = { enabled = true },
       -- you can do any additional lsp server setup here
       -- return true if you don't want this server to be setup with lspconfig
       ---@type table<string, fun(server:string, opts:_.lspconfig.options):boolean?>

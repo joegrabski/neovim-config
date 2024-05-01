@@ -13,22 +13,20 @@ return {
     config = function()
       require("copilot").setup({
         panel = {
-          enabled = true,
+          enabled = false,
           auto_refresh = true,
         },
-        keymap = {
-            accept = "<C-j>",
-            open = "<C-k>",
-        }
         suggestion = {
           enabled = true,
-          -- use the built-in keymapping for "accept" (<M-l>)
           auto_trigger = true,
-          accept = false, -- disable built-in keymapping
+          keymap = {
+            accept = "<C-j>",
+            next = "<C-k>",
+          },
         },
         filetype = {
-            markdown=true,
-        }
+          markdown = true,
+        },
       })
 
       -- hide copilot suggestions when cmp menu is open
