@@ -9,3 +9,19 @@ if vim.g.neovide then
   vim.g.neovide_scroll_animation_length = 0.15
   vim.o.guifont = "Monaspace Neon:h14"
 end
+
+local dap, dapui = require("dap"), require("dapui")
+
+-- Setup dapui
+dapui.setup()
+
+-- Automatically open/close dapui when starting/ending debug sessions
+dap.listeners.after.event_initialized["dapui_config"] = function()
+  dapui.open()
+end
+dap.listeners.before.event_terminated["dapui_config"] = function()
+  dapui.close()
+end
+dap.listeners.before.event_exited["dapui_config"] = function()
+  dapui.close()
+end
