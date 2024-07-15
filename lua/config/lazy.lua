@@ -43,6 +43,6 @@ require("lazy").setup({
     },
   },
 })
-vim.cmd("colorscheme catppuccin")
+vim.cmd("colorscheme oh-lucy")
 -- require("mini.animate").setup()
 vim.opt.swapfile = false

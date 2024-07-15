@@ -1,7 +1,7 @@
 return {
   "coffebar/neovim-project",
   opts = {
-    projects = { -- define project roots
+    projects = {
       "~/projects/*",
       "~/projects/transloadit/*",
       "~/projects/clearwatt/clearwatt-mono/",
@@ -34,12 +34,6 @@ return {
       autosave_ignore_not_normal = true,
     },
   },
-  init = function()
-    -- enable saving the state of plugins in the session
-    -- vim.opt.sessionoptions:append("globals") -- save global variables that start with an uppercase letter and contain at least one lowercase letter.
-    -- vim.opt.sessionoptions:append("globals") -- save global variables that start with an uppercase letter and contain at least one lowercase letter.
-    -- require("neo-tree").setup({})
-  end,
   dependencies = {
     { "nvim-lua/plenary.nvim" },
     { "nvim-telescope/telescope.nvim", tag = "0.1.4" },
