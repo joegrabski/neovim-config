@@ -3,10 +3,10 @@ return {
   optional = true,
   opts = {
     formatters_by_ft = {
-      ["javascript"] = { "prettier" },
-      ["javascriptreact"] = { "prettier" },
-      ["typescript"] = { "prettier" },
-      ["typescriptreact"] = { "prettier" },
+      ["javascript"] = { "biome" },
+      ["javascriptreact"] = { "biome" },
+      ["typescript"] = { "biome" },
+      ["typescriptreact"] = { "biome" },
       ["vue"] = { "prettier" },
       ["css"] = { "prettier" },
       ["scss"] = { "prettier" },
@@ -14,7 +14,6 @@ return {
       ["html"] = { "prettier" },
       ["json"] = { "prettier" },
       ["jsonc"] = { "prettier" },
-      ["yaml"] = { "prettier" },
       ["markdown"] = { "prettier" },
       ["markdown.mdx"] = { "prettier" },
       ["graphql"] = { "prettier" },

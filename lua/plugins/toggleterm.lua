@@ -6,7 +6,7 @@ return {
       open_mapping = [[<c-t>]],
       direction = "vertical",
       size = 55,
-      shade_terminals = true,
+      shade_terminals = false,
       authchdir = true,
       terminal_mappings = true,
       shell = "zsh",
