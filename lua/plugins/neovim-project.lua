@@ -2,7 +2,6 @@ return {
   "coffebar/neovim-project",
   opts = {
     projects = {
-      "~/projects/*",
       "~/projects/transloadit/*",
       "~/projects/clearwatt/clearwatt-mono/",
       "~/projects/clearwatt/clearwatt-django/",
@@ -10,10 +9,12 @@ return {
       "~/projects/clearwatt/evvn/src/apps/evvn-customer/evvn/",
       "~/projects/clearwatt/evvn/src/apps/pdf-generator/",
       "~/projects/clearwatt/evvn/src/apis/Evvn/",
+      "~/projects/clearwatt/toolkit/",
       "~/.config/nvim/",
     },
-    last_session_on_startup = false,
-    dashboard_mode = true,
+    last_session_on_startup = true,
+    datapath = vim.fn.stdpath("data"),
+    dashboard_mode = false,
     session_manager_opts = {
       enabled = true,
       autosave_ignore_dirs = {

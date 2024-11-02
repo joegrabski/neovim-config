@@ -8,6 +8,8 @@ return {
         "typescript",
         "javascript",
         "python",
+        "go",
+        "c_sharp",
         "lua",
         "vim",
         "vimdoc",
