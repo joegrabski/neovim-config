@@ -7,7 +7,7 @@ return {
       ["javascriptreact"] = { "biome" },
       ["typescript"] = { "biome" },
       ["typescriptreact"] = { "biome" },
-      ["cs"] = { "csharpier" },
+      ["cs"] = { "omnisharp" },
       ["vue"] = { "prettier" },
       ["css"] = { "prettier" },
       ["scss"] = { "prettier" },
