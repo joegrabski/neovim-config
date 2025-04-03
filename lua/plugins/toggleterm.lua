@@ -4,12 +4,17 @@ return {
   init = function()
     require("toggleterm").setup({
       open_mapping = [[<c-t>]],
-      direction = "vertical",
+      direction = "float",
+      start_in_insert = true,
       size = 55,
-      shade_terminals = false,
+      shade_terminals = true,
       authchdir = true,
       terminal_mappings = true,
-      shell = "zsh",
+      close_on_exit = false,
+      float_opts = {
+        border = "curved",
+        winblend = 0,
+      },
     })
   end,
 }

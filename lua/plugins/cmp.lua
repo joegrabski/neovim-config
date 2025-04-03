@@ -1,4 +1,3 @@
-local cmp = require("cmp")
 return {
   {
     "hrsh7th/nvim-cmp",
@@ -9,6 +8,7 @@ return {
       "hrsh7th/cmp-cmdline",
     },
     config = function()
+      local cmp = require("cmp")
       cmp.setup({
         snippet = {
           expand = function(args)

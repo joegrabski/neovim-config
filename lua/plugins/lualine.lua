@@ -5,7 +5,7 @@ return {
 
     -- Color table for highlights
     local colors = {
-      bg = "NONE",
+      bg = nil,
       fg = "#cfd0d7",
       white = "#ffffff",
       yellow = "#e9d26c",
@@ -101,7 +101,7 @@ return {
           ["!"] = colors.red,
           t = colors.red,
         }
-        return { bg = mode_color[vim.fn.mode()] }
+        return { fg = mode_color[vim.fn.mode()] }
       end,
     })
 

@@ -20,3 +20,4 @@ opt.ignorecase = true
 opt.smartcase = true
 
 opt.termguicolors = false
+opt.swapfile = false
