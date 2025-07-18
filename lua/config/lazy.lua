@@ -36,3 +36,10 @@ require("lazy").setup({
   },
 })
 vim.cmd("colorscheme nordic")
+
+require("mason").setup({
+  registries = {
+    "github:mason-org/mason-registry",
+    "github:Crashdummyy/mason-registry",
+  },
+})
